@@ -4,6 +4,8 @@ cd guacamole-docker-compose
 ./prepare.sh
 docker-compose up -d
 
+
+#Access xx.xx.xx.xx:8443
 #Default login
 #username guacadmin
 #password guacadmin
