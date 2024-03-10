@@ -1,12 +1,5 @@
-version: "2"
-services:
-  guacamole:
-    image: oznu/guacamole
-    container_name: guacamole
-    volumes:
-      - postgres:/config
-    ports:
-      - 8080:8080
-volumes:
-  postgres:
-    driver: local
+#The followoing lines require sudo access via Terminal;
+git clone "https://github.com/boschkundendienst/guacamole-docker-compose.git"
+cd guacamole-docker-compose
+./prepare.sh
+docker-compose up -d
